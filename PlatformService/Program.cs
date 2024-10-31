@@ -6,10 +6,17 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddControllers();
+
+// Add InMemory Database
 builder.Services.AddDbContext<AppDbContext>(opt => 
     opt.UseInMemoryDatabase("InMem"));
 
+// Register Dependecy Injection Services
 builder.Services.AddScoped<IPlatformRepo, PlatformRepo>();
+
+// Add AutoMapper Service
+builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
 var app = builder.Build();
 
@@ -21,7 +28,9 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+app.MapControllers();
 
+// Seed App Data
 PrepDb.PrepPopulation(app);
 
 app.Run();
