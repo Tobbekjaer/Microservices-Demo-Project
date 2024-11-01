@@ -9,7 +9,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddControllers();
 
 // Add InMemory Database
-builder.Services.AddDbContext<AppDbContext>(opt => 
+builder.Services.AddDbContext<AppDbContext>(opt =>
     opt.UseInMemoryDatabase("InMem"));
 
 // Register Dependecy Injection Services
@@ -34,5 +34,3 @@ app.MapControllers();
 PrepDb.PrepPopulation(app);
 
 app.Run();
-
-
