@@ -7,6 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddControllers();
+builder.Services.AddHttpClient<ICommandDataClient, HttpCommandDataClient>();
 
 // Add InMemory Database
 builder.Services.AddDbContext<AppDbContext>(opt =>
@@ -17,6 +18,8 @@ builder.Services.AddScoped<IPlatformRepo, PlatformRepo>();
 
 // Add AutoMapper Service
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+
+System.Console.WriteLine($"--> Command Service Endpoint: {builder.Configuration["CommandService"]}");
 
 var app = builder.Build();
 
