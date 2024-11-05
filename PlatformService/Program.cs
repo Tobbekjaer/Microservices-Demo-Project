@@ -9,11 +9,21 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddControllers();
 builder.Services.AddHttpClient<ICommandDataClient, HttpCommandDataClient>();
 
-// Add InMemory Database
-builder.Services.AddDbContext<AppDbContext>(opt =>
-    opt.UseInMemoryDatabase("InMem"));
+// Check the environment and use the appropriate database
+if (builder.Environment.IsDevelopment())
+{
+    System.Console.WriteLine("--> Using InMemory database");
+    builder.Services.AddDbContext<AppDbContext>(opt =>
+        opt.UseInMemoryDatabase("InMem"));
+}
+else
+{
+    System.Console.WriteLine("--> Using SQL database");
+    builder.Services.AddDbContext<AppDbContext>(opt =>
+        opt.UseSqlServer(builder.Configuration.GetConnectionString("PlatformsConn")));
+}
 
-// Register Dependecy Injection Services
+// Register Dependency Injection Services
 builder.Services.AddScoped<IPlatformRepo, PlatformRepo>();
 
 // Add AutoMapper Service
