@@ -1,16 +1,31 @@
 
+using Microsoft.EntityFrameworkCore;
+
 public static class PrepDb
 {
-    public static void PrepPopulation(IApplicationBuilder app)
+    public static void PrepPopulation(IApplicationBuilder app, bool isProd)
     {
         using(var serviceScope = app.ApplicationServices.CreateScope())
         {
-            SeedData(serviceScope.ServiceProvider.GetService<AppDbContext>());
+            SeedData(serviceScope.ServiceProvider.GetService<AppDbContext>(), isProd);
         }
     }
 
-    public static void SeedData(AppDbContext dbContext)
+    public static void SeedData(AppDbContext dbContext, bool isProd)
     {
+        if(isProd)
+        {
+            Console.WriteLine("--> Attempting to apply migrations...");
+            try
+            {
+                Console.WriteLine("--> SQL Database Created...");
+                dbContext.Database.Migrate();
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine($"--> Could not run migrations: {ex.Message}");
+            }
+        }
         if(!dbContext.Platforms.Any())
         {
             Console.WriteLine("--> Seeding data...");

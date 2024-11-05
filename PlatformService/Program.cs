@@ -10,17 +10,17 @@ builder.Services.AddControllers();
 builder.Services.AddHttpClient<ICommandDataClient, HttpCommandDataClient>();
 
 // Check the environment and use the appropriate database
-if (builder.Environment.IsDevelopment())
-{
-    System.Console.WriteLine("--> Using InMemory database");
-    builder.Services.AddDbContext<AppDbContext>(opt =>
-        opt.UseInMemoryDatabase("InMem"));
-}
-else
+if (builder.Environment.IsProduction())
 {
     System.Console.WriteLine("--> Using SQL database");
     builder.Services.AddDbContext<AppDbContext>(opt =>
         opt.UseSqlServer(builder.Configuration.GetConnectionString("PlatformsConn")));
+}
+else
+{
+    System.Console.WriteLine("--> Using InMemory database");
+    builder.Services.AddDbContext<AppDbContext>(opt =>
+        opt.UseInMemoryDatabase("InMem"));
 }
 
 // Register Dependency Injection Services
@@ -44,6 +44,6 @@ if (app.Environment.IsDevelopment())
 app.MapControllers();
 
 // Seed App Data
-PrepDb.PrepPopulation(app);
+PrepDb.PrepPopulation(app, app.Environment.IsProduction());
 
 app.Run();
