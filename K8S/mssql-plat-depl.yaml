@@ -22,11 +22,11 @@ spec:
             value: "Express"
           - name: ACCEPT_EULA
             value: "Y"
-          - name: MS_PASSWORD
+          - name: SA_PASSWORD
             valueFrom:
               secretKeyRef:
-                name: mssql-key
-                key: MS_PASSWORD
+                name: mssqlkey
+                key: SA_PASSWORD
           volumeMounts:
           - mountPath: /var/opt/mssql/data
             name: mssqldb
