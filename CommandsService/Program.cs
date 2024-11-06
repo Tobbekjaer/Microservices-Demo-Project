@@ -6,6 +6,12 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddControllers();
 
+// Register Dependency Injection Services
+builder.Services.AddScoped<ICommandRepo, CommandRepo>();
+
+// Add AutoMapper Service
+builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
