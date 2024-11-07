@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Fp/YKqRNAwYpToJhMTe+DHIgnFiVv1fLC3pGK1JrmjzwRvNysGu51CoSWH+iAeSlS59CG7i6CUzE2sndvO1rgg==",
+  "dgSpecHash": "JgunQmJic0S3OAF6/sb9SzMzZzPBoRyjwAmuxtmPu3EsBAT+BmMqQoTlJIwJQt/3s9fW01lbV7Aoo9FgUiaLpw==",
   "success": true,
   "projectFilePath": "/Users/tobiaskjaer/Repoes/Microservices-Demo-Project/PlatformService/PlatformService.csproj",
   "expectedPackageFiles": [
@@ -51,6 +51,7 @@
     "/Users/tobiaskjaer/.nuget/packages/microsoft.sqlserver.server/1.0.0/microsoft.sqlserver.server.1.0.0.nupkg.sha512",
     "/Users/tobiaskjaer/.nuget/packages/microsoft.win32.systemevents/6.0.0/microsoft.win32.systemevents.6.0.0.nupkg.sha512",
     "/Users/tobiaskjaer/.nuget/packages/mono.texttemplating/2.2.1/mono.texttemplating.2.2.1.nupkg.sha512",
+    "/Users/tobiaskjaer/.nuget/packages/rabbitmq.client/6.2.2/rabbitmq.client.6.2.2.nupkg.sha512",
     "/Users/tobiaskjaer/.nuget/packages/swashbuckle.aspnetcore/6.4.0/swashbuckle.aspnetcore.6.4.0.nupkg.sha512",
     "/Users/tobiaskjaer/.nuget/packages/swashbuckle.aspnetcore.swagger/6.4.0/swashbuckle.aspnetcore.swagger.6.4.0.nupkg.sha512",
     "/Users/tobiaskjaer/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.4.0/swashbuckle.aspnetcore.swaggergen.6.4.0.nupkg.sha512",
