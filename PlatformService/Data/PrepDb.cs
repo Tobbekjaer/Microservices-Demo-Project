@@ -33,8 +33,7 @@ public static class PrepDb
             dbContext.Platforms.AddRange(
                 new Platform() {Name = "Dot Net", Publisher = "Microsoft", Cost = "Free"},
                 new Platform() {Name = "SQL Server Express", Publisher = "Microsoft", Cost = "Free"},
-                new Platform() {Name = "Kubernetes", Publisher = "Cloud Native Computer Foundation", Cost = "Free"},
-                new Platform() {Name = "Docker", Publisher = "Docker Hub", Cost = "Free"}
+                new Platform() {Name = "Kubernetes", Publisher = "Cloud Native Computer Foundation", Cost = "Free"}
             );
 
             dbContext.SaveChanges();
