@@ -13,6 +13,8 @@ builder.Services.AddDbContext<AppDbContext>(opt => opt.UseInMemoryDatabase("InMe
 
 // Register Dependency Injection Services
 builder.Services.AddScoped<ICommandRepo, CommandRepo>();
+builder.Services.AddSingleton<IEventProcessor, EventProcessor>();
+builder.Services.AddHostedService<MessageBusSubscriber>();
 
 // Add AutoMapper Service
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());

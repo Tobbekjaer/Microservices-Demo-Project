@@ -111,3 +111,5 @@
 /Users/tobiaskjaer/Repoes/Microservices-Demo-Project/CommandsService/obj/Debug/net8.0/CommandsService.pdb
 /Users/tobiaskjaer/Repoes/Microservices-Demo-Project/CommandsService/obj/Debug/net8.0/CommandsService.genruntimeconfig.cache
 /Users/tobiaskjaer/Repoes/Microservices-Demo-Project/CommandsService/obj/Debug/net8.0/ref/CommandsService.dll
+/Users/tobiaskjaer/Repoes/Microservices-Demo-Project/CommandsService/bin/Debug/net8.0/appsettings.Production.json
+/Users/tobiaskjaer/Repoes/Microservices-Demo-Project/CommandsService/bin/Debug/net8.0/RabbitMQ.Client.dll
