@@ -11,6 +11,7 @@ builder.Services.AddHttpClient<ICommandDataClient, HttpCommandDataClient>();
 builder.Services.AddSingleton<IMessageBusClient, MessageBusClient>();
 
 // Check the environment and use the appropriate database
+/*
 if (builder.Environment.IsProduction())
 {
     System.Console.WriteLine("--> Using SQL database");
@@ -23,6 +24,12 @@ else
     builder.Services.AddDbContext<AppDbContext>(opt =>
         opt.UseInMemoryDatabase("InMem"));
 }
+*/
+System.Console.WriteLine("--> Using SQL database");
+builder.Services.AddDbContext<AppDbContext>(opt =>
+    opt.UseSqlServer(builder.Configuration.GetConnectionString("PlatformsConn")));
+
+
 
 // Register Dependency Injection Services
 builder.Services.AddScoped<IPlatformRepo, PlatformRepo>();
@@ -45,6 +52,6 @@ if (app.Environment.IsDevelopment())
 app.MapControllers();
 
 // Seed App Data
-PrepDb.PrepPopulation(app, app.Environment.IsProduction());
+// PrepDb.PrepPopulation(app, app.Environment.IsProduction());
 
 app.Run();
