@@ -1,5 +1,4 @@
 /Users/tobiaskjaer/Repoes/Microservices-Demo-Project/PlatformService/bin/Debug/net8.0/appsettings.Development.json
-/Users/tobiaskjaer/Repoes/Microservices-Demo-Project/PlatformService/bin/Debug/net8.0/appsettings.json
 /Users/tobiaskjaer/Repoes/Microservices-Demo-Project/PlatformService/bin/Debug/net8.0/PlatformService
 /Users/tobiaskjaer/Repoes/Microservices-Demo-Project/PlatformService/bin/Debug/net8.0/PlatformService.deps.json
 /Users/tobiaskjaer/Repoes/Microservices-Demo-Project/PlatformService/bin/Debug/net8.0/PlatformService.runtimeconfig.json
