@@ -1,11 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "lzjArfSC2jhD6xOrOMxkngMM1pUYfJdti4KCrHkC7ZbbjAWFyn3NDGfznW8JNyf41EksjXcXImh3Z1Dxa8FhMQ==",
+  "dgSpecHash": "Nl8aotM3y1MTQ8C1MfdF6N0RM1N+Ve8mi4D0GRx2ABMEKX6YouN2FJqQ5AMkuVie0zXSFzLh/uZ3wdehD00bkQ==",
   "success": true,
   "projectFilePath": "/Users/tobiaskjaer/Repoes/Microservices-Demo-Project/CommandsService/CommandsService.csproj",
   "expectedPackageFiles": [
     "/Users/tobiaskjaer/.nuget/packages/automapper/12.0.1/automapper.12.0.1.nupkg.sha512",
     "/Users/tobiaskjaer/.nuget/packages/automapper.extensions.microsoft.dependencyinjection/12.0.1/automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
+    "/Users/tobiaskjaer/.nuget/packages/google.protobuf/3.29.1/google.protobuf.3.29.1.nupkg.sha512",
+    "/Users/tobiaskjaer/.nuget/packages/grpc.core.api/2.67.0/grpc.core.api.2.67.0.nupkg.sha512",
+    "/Users/tobiaskjaer/.nuget/packages/grpc.net.client/2.67.0/grpc.net.client.2.67.0.nupkg.sha512",
+    "/Users/tobiaskjaer/.nuget/packages/grpc.net.common/2.67.0/grpc.net.common.2.67.0.nupkg.sha512",
+    "/Users/tobiaskjaer/.nuget/packages/grpc.tools/2.68.1/grpc.tools.2.68.1.nupkg.sha512",
     "/Users/tobiaskjaer/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",
     "/Users/tobiaskjaer/.nuget/packages/microsoft.aspnetcore.openapi/8.0.2/microsoft.aspnetcore.openapi.8.0.2.nupkg.sha512",
     "/Users/tobiaskjaer/.nuget/packages/microsoft.bcl.asyncinterfaces/6.0.0/microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",
