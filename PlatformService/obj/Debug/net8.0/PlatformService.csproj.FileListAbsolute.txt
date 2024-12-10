@@ -146,3 +146,10 @@
 /Users/tobiaskjaer/Repoes/Microservices-Demo-Project/PlatformService/obj/Debug/net8.0/ref/PlatformService.dll
 /Users/tobiaskjaer/Repoes/Microservices-Demo-Project/PlatformService/bin/Debug/net8.0/appsettings.Production.json
 /Users/tobiaskjaer/Repoes/Microservices-Demo-Project/PlatformService/bin/Debug/net8.0/RabbitMQ.Client.dll
+/Users/tobiaskjaer/Repoes/Microservices-Demo-Project/PlatformService/bin/Debug/net8.0/Google.Protobuf.dll
+/Users/tobiaskjaer/Repoes/Microservices-Demo-Project/PlatformService/bin/Debug/net8.0/Grpc.AspNetCore.Server.dll
+/Users/tobiaskjaer/Repoes/Microservices-Demo-Project/PlatformService/bin/Debug/net8.0/Grpc.AspNetCore.Server.ClientFactory.dll
+/Users/tobiaskjaer/Repoes/Microservices-Demo-Project/PlatformService/bin/Debug/net8.0/Grpc.Core.Api.dll
+/Users/tobiaskjaer/Repoes/Microservices-Demo-Project/PlatformService/bin/Debug/net8.0/Grpc.Net.Client.dll
+/Users/tobiaskjaer/Repoes/Microservices-Demo-Project/PlatformService/bin/Debug/net8.0/Grpc.Net.ClientFactory.dll
+/Users/tobiaskjaer/Repoes/Microservices-Demo-Project/PlatformService/bin/Debug/net8.0/Grpc.Net.Common.dll
