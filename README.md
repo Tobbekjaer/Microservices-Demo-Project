@@ -1,6 +1,6 @@
 ## Microservices Demo Project
 
-Jeg har udviklet en microservices-løsning, hvor:
+Udvikl en microservices-løsning, hvor:
   - **Platform Service** registrerer nye platforme (fx .NET, Docker).
   - **Commands Service** håndterer oprettelse af commands for platforme og viser dem via REST API. (fx. "dotnet run", "docker build -t {docker user id}/{image name}:{version} .")
 
