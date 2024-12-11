@@ -8,5 +8,5 @@ I projektet har jeg beskæftiget mig med følgende komponenter:
    - To .NET microservices (Platform Service og Commands Service).
    - Dedikerede databaser til hver service.
    - En API Gateway til at route requests.
-   - Synkron kommunikation (HTTP & gRPC).
+   - Synkron kommunikation (HTTP).
    - Asynkron kommunikation via Event Bus (RabbitMQ).
