@@ -1,4 +1,5 @@
 /Users/tobiaskjaer/Repoes/Microservices-Demo-Project/PlatformService/bin/Debug/net8.0/appsettings.Development.json
+/Users/tobiaskjaer/Repoes/Microservices-Demo-Project/PlatformService/bin/Debug/net8.0/appsettings.Production.json
 /Users/tobiaskjaer/Repoes/Microservices-Demo-Project/PlatformService/bin/Debug/net8.0/PlatformService
 /Users/tobiaskjaer/Repoes/Microservices-Demo-Project/PlatformService/bin/Debug/net8.0/PlatformService.deps.json
 /Users/tobiaskjaer/Repoes/Microservices-Demo-Project/PlatformService/bin/Debug/net8.0/PlatformService.runtimeconfig.json
@@ -8,6 +9,13 @@
 /Users/tobiaskjaer/Repoes/Microservices-Demo-Project/PlatformService/bin/Debug/net8.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 /Users/tobiaskjaer/Repoes/Microservices-Demo-Project/PlatformService/bin/Debug/net8.0/Azure.Core.dll
 /Users/tobiaskjaer/Repoes/Microservices-Demo-Project/PlatformService/bin/Debug/net8.0/Azure.Identity.dll
+/Users/tobiaskjaer/Repoes/Microservices-Demo-Project/PlatformService/bin/Debug/net8.0/Google.Protobuf.dll
+/Users/tobiaskjaer/Repoes/Microservices-Demo-Project/PlatformService/bin/Debug/net8.0/Grpc.AspNetCore.Server.dll
+/Users/tobiaskjaer/Repoes/Microservices-Demo-Project/PlatformService/bin/Debug/net8.0/Grpc.AspNetCore.Server.ClientFactory.dll
+/Users/tobiaskjaer/Repoes/Microservices-Demo-Project/PlatformService/bin/Debug/net8.0/Grpc.Core.Api.dll
+/Users/tobiaskjaer/Repoes/Microservices-Demo-Project/PlatformService/bin/Debug/net8.0/Grpc.Net.Client.dll
+/Users/tobiaskjaer/Repoes/Microservices-Demo-Project/PlatformService/bin/Debug/net8.0/Grpc.Net.ClientFactory.dll
+/Users/tobiaskjaer/Repoes/Microservices-Demo-Project/PlatformService/bin/Debug/net8.0/Grpc.Net.Common.dll
 /Users/tobiaskjaer/Repoes/Microservices-Demo-Project/PlatformService/bin/Debug/net8.0/Humanizer.dll
 /Users/tobiaskjaer/Repoes/Microservices-Demo-Project/PlatformService/bin/Debug/net8.0/Microsoft.AspNetCore.OpenApi.dll
 /Users/tobiaskjaer/Repoes/Microservices-Demo-Project/PlatformService/bin/Debug/net8.0/Microsoft.Bcl.AsyncInterfaces.dll
@@ -41,6 +49,7 @@
 /Users/tobiaskjaer/Repoes/Microservices-Demo-Project/PlatformService/bin/Debug/net8.0/Microsoft.SqlServer.Server.dll
 /Users/tobiaskjaer/Repoes/Microservices-Demo-Project/PlatformService/bin/Debug/net8.0/Microsoft.Win32.SystemEvents.dll
 /Users/tobiaskjaer/Repoes/Microservices-Demo-Project/PlatformService/bin/Debug/net8.0/Mono.TextTemplating.dll
+/Users/tobiaskjaer/Repoes/Microservices-Demo-Project/PlatformService/bin/Debug/net8.0/RabbitMQ.Client.dll
 /Users/tobiaskjaer/Repoes/Microservices-Demo-Project/PlatformService/bin/Debug/net8.0/Swashbuckle.AspNetCore.Swagger.dll
 /Users/tobiaskjaer/Repoes/Microservices-Demo-Project/PlatformService/bin/Debug/net8.0/Swashbuckle.AspNetCore.SwaggerGen.dll
 /Users/tobiaskjaer/Repoes/Microservices-Demo-Project/PlatformService/bin/Debug/net8.0/Swashbuckle.AspNetCore.SwaggerUI.dll
@@ -144,12 +153,3 @@
 /Users/tobiaskjaer/Repoes/Microservices-Demo-Project/PlatformService/obj/Debug/net8.0/PlatformService.pdb
 /Users/tobiaskjaer/Repoes/Microservices-Demo-Project/PlatformService/obj/Debug/net8.0/PlatformService.genruntimeconfig.cache
 /Users/tobiaskjaer/Repoes/Microservices-Demo-Project/PlatformService/obj/Debug/net8.0/ref/PlatformService.dll
-/Users/tobiaskjaer/Repoes/Microservices-Demo-Project/PlatformService/bin/Debug/net8.0/appsettings.Production.json
-/Users/tobiaskjaer/Repoes/Microservices-Demo-Project/PlatformService/bin/Debug/net8.0/RabbitMQ.Client.dll
-/Users/tobiaskjaer/Repoes/Microservices-Demo-Project/PlatformService/bin/Debug/net8.0/Google.Protobuf.dll
-/Users/tobiaskjaer/Repoes/Microservices-Demo-Project/PlatformService/bin/Debug/net8.0/Grpc.AspNetCore.Server.dll
-/Users/tobiaskjaer/Repoes/Microservices-Demo-Project/PlatformService/bin/Debug/net8.0/Grpc.AspNetCore.Server.ClientFactory.dll
-/Users/tobiaskjaer/Repoes/Microservices-Demo-Project/PlatformService/bin/Debug/net8.0/Grpc.Core.Api.dll
-/Users/tobiaskjaer/Repoes/Microservices-Demo-Project/PlatformService/bin/Debug/net8.0/Grpc.Net.Client.dll
-/Users/tobiaskjaer/Repoes/Microservices-Demo-Project/PlatformService/bin/Debug/net8.0/Grpc.Net.ClientFactory.dll
-/Users/tobiaskjaer/Repoes/Microservices-Demo-Project/PlatformService/bin/Debug/net8.0/Grpc.Net.Common.dll
