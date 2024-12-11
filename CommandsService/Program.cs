@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Mvc.ModelBinding.Binders;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -15,6 +16,7 @@ builder.Services.AddDbContext<AppDbContext>(opt => opt.UseInMemoryDatabase("InMe
 builder.Services.AddScoped<ICommandRepo, CommandRepo>();
 builder.Services.AddSingleton<IEventProcessor, EventProcessor>();
 builder.Services.AddHostedService<MessageBusSubscriber>();
+builder.Services.AddScoped<IPlatformDataClient, PlatformDataClient>();
 
 // Add AutoMapper Service
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
@@ -29,6 +31,10 @@ if (app.Environment.IsDevelopment())
 }
 
 // app.UseHttpsRedirection();
+
 app.MapControllers();
+
+// Seed the database
+PrepDb.PrepPopulation(app);
 
 app.Run();
